@@ -1,0 +1,30 @@
+
+
+<div class="box">
+    <div class="item" *ngFor="let usuario of usuarios">
+        <ul>
+            <li>
+                {{usuario.usuario}}
+                {{usuario.correo}}
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="boxAsistencia">
+    <button onclick="location.href='http://localhost:4200/usuarios/agregar'">Registrar Nueva Asistencia</button>
+
+</div>
+
+<router-outlet></router-outlet>
+<div class="box">
+    <h2>
+        Asistencia a la Junta Receptora Del Voto.
+    </h2>
+</div>
+
+<div class="boxInformativo">
+    <h3>
+        El Consejo Nacional Electoral (CNE) de la República del Ecuador es el máximo organismo de sufragio en dicho país. Tiene su sede en la ciudad de Quito, está constituido por 5 vocales elegidos mediante un concurso de méritos y oposición organizado por el Consejo de Participación Ciudadana y Control Social para un período de 6 años debiendo renovarse una mitad cada 3 años, de entre los vocales se elige a un Presidente y un Vicepresidente; el CNE goza de completa autonomía financiera y administrativa. Antes de la promulgación de la Constitución del Ecuador de 2008, las funciones del CNE eran ejercidas por el Tribunal Supremo Electoral, organismo que desapareció después de la entrada en vigencia de dicha constitución. 
+    </h3>
+</div>

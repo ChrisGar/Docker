@@ -1,0 +1,14 @@
+
+
+
+
+<div class="box">
+    <h2>Para realizar la confirmacion de su asistencia ingresar:</h2>
+    <form class="item" #f="ngForm" (ngSubmit)="onSubmit()">
+        <input type="text" name="nombre" placeholder="Ingresar Nombre" [(ngModel)]="nombreInput" required/>
+        <input type="text" name="contrasenia" placeholder="Ingresar Cedula" [(ngModel)]="contraseniaInput" required/>
+        <input type="text" name="corroe" placeholder="Ingresar correo" [(ngModel)]="correoInput" required/>
+        
+        <button type="submit" style="cursor: pointer;" onclick="location.href='http://localhost:9090/usuarios/agregar'">Listo</button>
+    </form>
+</div>
